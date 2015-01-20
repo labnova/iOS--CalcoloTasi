@@ -14,6 +14,12 @@
 		37E43A611A651762005DD6DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E43A601A651762005DD6DB /* Images.xcassets */; };
 		37E43A641A651762005DD6DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E43A621A651762005DD6DB /* LaunchScreen.xib */; };
 		37E43A701A651762005DD6DB /* CalcoloTasiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E43A6F1A651762005DD6DB /* CalcoloTasiTests.swift */; };
+		37E43AE21A654E26005DD6DB /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E43AE11A654E26005DD6DB /* IndexViewController.swift */; };
+		37E43AE41A655220005DD6DB /* ComuniTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E43AE31A655220005DD6DB /* ComuniTableViewController.swift */; };
+		37E790231A6A5A1B00815C6A /* risultatiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E790221A6A5A1B00815C6A /* risultatiViewController.swift */; };
+		37E950E51A6D351200FF4F67 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E950E41A6D351200FF4F67 /* Social.framework */; };
+		37E950E81A6D46DB00FF4F67 /* icona-small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37E950E61A6D46DB00FF4F67 /* icona-small.jpg */; };
+		37E950E91A6D46DB00FF4F67 /* icona.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37E950E71A6D46DB00FF4F67 /* icona.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		37E43A691A651762005DD6DB /* CalcoloTasiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcoloTasiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E43A6E1A651762005DD6DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37E43A6F1A651762005DD6DB /* CalcoloTasiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcoloTasiTests.swift; sourceTree = "<group>"; };
+		37E43AE11A654E26005DD6DB /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		37E43AE31A655220005DD6DB /* ComuniTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComuniTableViewController.swift; sourceTree = "<group>"; };
+		37E790221A6A5A1B00815C6A /* risultatiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = risultatiViewController.swift; sourceTree = "<group>"; };
+		37E950E41A6D351200FF4F67 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		37E950E61A6D46DB00FF4F67 /* icona-small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "icona-small.jpg"; path = "../../../../PROGETTI_VARI/TASI/icona-small.jpg"; sourceTree = "<group>"; };
+		37E950E71A6D46DB00FF4F67 /* icona.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icona.jpg; path = ../../../../PROGETTI_VARI/TASI/icona.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E950E51A6D351200FF4F67 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 		37E43A481A651762005DD6DB = {
 			isa = PBXGroup;
 			children = (
+				37E950E41A6D351200FF4F67 /* Social.framework */,
 				37E43A531A651762005DD6DB /* CalcoloTasi */,
 				37E43A6C1A651762005DD6DB /* CalcoloTasiTests */,
 				37E43A521A651762005DD6DB /* Products */,
@@ -81,6 +95,9 @@
 			children = (
 				37E43A561A651762005DD6DB /* AppDelegate.swift */,
 				37E43A5B1A651762005DD6DB /* ViewController.swift */,
+				37E43AE31A655220005DD6DB /* ComuniTableViewController.swift */,
+				37E43AE11A654E26005DD6DB /* IndexViewController.swift */,
+				37E790221A6A5A1B00815C6A /* risultatiViewController.swift */,
 				37E43A5D1A651762005DD6DB /* Main.storyboard */,
 				37E43A601A651762005DD6DB /* Images.xcassets */,
 				37E43A621A651762005DD6DB /* LaunchScreen.xib */,
@@ -93,6 +110,8 @@
 		37E43A541A651762005DD6DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				37E950E61A6D46DB00FF4F67 /* icona-small.jpg */,
+				37E950E71A6D46DB00FF4F67 /* icona.jpg */,
 				37E43A551A651762005DD6DB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -197,6 +216,8 @@
 			files = (
 				37E43A5F1A651762005DD6DB /* Main.storyboard in Resources */,
 				37E43A641A651762005DD6DB /* LaunchScreen.xib in Resources */,
+				37E950E91A6D46DB00FF4F67 /* icona.jpg in Resources */,
+				37E950E81A6D46DB00FF4F67 /* icona-small.jpg in Resources */,
 				37E43A611A651762005DD6DB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +238,10 @@
 			files = (
 				37E43A5C1A651762005DD6DB /* ViewController.swift in Sources */,
 				37E43A5A1A651762005DD6DB /* CalcoloTasi.xcdatamodeld in Sources */,
+				37E43AE41A655220005DD6DB /* ComuniTableViewController.swift in Sources */,
 				37E43A571A651762005DD6DB /* AppDelegate.swift in Sources */,
+				37E790231A6A5A1B00815C6A /* risultatiViewController.swift in Sources */,
+				37E43AE21A654E26005DD6DB /* IndexViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +433,7 @@
 				37E43A751A651762005DD6DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37E43A761A651762005DD6DB /* Build configuration list for PBXNativeTarget "CalcoloTasiTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +442,7 @@
 				37E43A781A651762005DD6DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
