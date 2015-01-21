@@ -18,9 +18,12 @@ extension String {
 class IndexViewController: UIViewController, UITextFieldDelegate  {
     
   
+    @IBOutlet weak var possesso: UISlider!
     
     @IBOutlet weak var renditaCatastaleText: UITextField!
     @IBOutlet weak var aliquotaTextField: UITextField!
+    
+    @IBOutlet weak var possessoText: UILabel!
     
     var Comuni = ["Aosta", "Torino", "Milano", "Trento", "Venezia", "Trieste", "Genova",
         "Bologna", "Firenze", "Perugia", "Ancona", "L\'Aquila", "Roma", "Campobasso", "Napoli",
@@ -37,6 +40,7 @@ class IndexViewController: UIViewController, UITextFieldDelegate  {
     var aliquota:Double!
     var baseImponibile: Double!
     var impostaLorda: Double!
+    var quotaPossesso:Double!
     
   
     var rataAcconto: Double!
@@ -70,6 +74,10 @@ class IndexViewController: UIViewController, UITextFieldDelegate  {
         rc = rc + magg
         return rc
     }
+    
+    
+    
+   
     
     func textField(textField: UITextField,
         shouldChangeCharactersInRange range: NSRange,
@@ -105,7 +113,13 @@ class IndexViewController: UIViewController, UITextFieldDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        possesso.minimumValue = 0
+        possesso.maximumValue = 100
+        possesso.value = 100
         
+        possesso.addTarget(self,
+            action: "valoreCambiatoSlider:",
+            forControlEvents:UIControlEvents.ValueChanged)
     }
     
  
@@ -119,7 +133,16 @@ class IndexViewController: UIViewController, UITextFieldDelegate  {
     
    
     
-    
+    func valoreCambiatoSlider(sender:UISlider!) {
+        if(sender == possesso) {
+            var possessoValText = String()
+            var possessoInt = Int(possesso.value)
+            
+            
+            
+            self.possessoText.text = String(possessoInt)
+        }
+    }
   
 
     @IBAction func calcola(sender: AnyObject) {
@@ -130,7 +153,20 @@ class IndexViewController: UIViewController, UITextFieldDelegate  {
         
         baseImponibile = rivalutazione(rC)*160
         
+        if (possesso.value != 100) {
+            
+            quotaPossesso = (baseImponibile * Double(possesso.value)) / 100
+            baseImponibile = quotaPossesso;
+        }
+        
         impostaLorda = (baseImponibile * aliquota) / 1000
+        
+//        if (m != 12) {
+//            double impLordSingoloMese = 1.00;
+//            impLordSingoloMese = impostaLorda /12;
+//            impostaLorda = impLordSingoloMese * m;
+//            
+//        }
         
         rataAcconto = impostaLorda / 2
         rataSaldo = rataAcconto
@@ -172,6 +208,8 @@ class IndexViewController: UIViewController, UITextFieldDelegate  {
            
             
         }
+        
+        
     
         
         

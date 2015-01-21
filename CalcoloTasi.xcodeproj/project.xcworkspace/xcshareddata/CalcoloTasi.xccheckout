@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F900BEE9-A859-4688-96C2-D010D1612B84</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CalcoloTasi</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>570F37F3C7DC820AE56BC6B1B13CA3D49ACFD0EF</key>
+		<string>https://github.com/labnova/iOS--CalcoloTasi.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CalcoloTasi.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>570F37F3C7DC820AE56BC6B1B13CA3D49ACFD0EF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/labnova/iOS--CalcoloTasi.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>570F37F3C7DC820AE56BC6B1B13CA3D49ACFD0EF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>570F37F3C7DC820AE56BC6B1B13CA3D49ACFD0EF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CalcoloTasi</string>
+		</dict>
+	</array>
+</dict>
+</plist>

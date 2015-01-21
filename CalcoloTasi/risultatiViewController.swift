@@ -12,6 +12,7 @@ import MessageUI
 
 class risultatiViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
+    @IBOutlet weak var imageView: UIImageView!
    
     @IBOutlet weak var corpoMessaggio: UITextView!
     
@@ -33,6 +34,16 @@ class risultatiViewController: UIViewController, MFMailComposeViewControllerDele
         aliquotaTasiText.text = aliquotaR
         rataAccontoText.text = rataAcconto
         rataSaldoText.text = rataSaldo
+        
+        self.imageView.animationImages = [
+            UIImage(named:"copertina.jpg")!,
+            UIImage(named:"copertina-2.jpg")!,
+            UIImage(named:"copertina-3.jpg")!
+        ]
+        
+        self.imageView.animationDuration = 3
+        self.imageView.startAnimating()
+        
     }
 
     override func didReceiveMemoryWarning() {
