@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3774715F1A72FE4E00F7B154 /* secondaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3774715E1A72FE4E00F7B154 /* secondaTableViewController.swift */; };
+		377471631A730A9E00F7B154 /* caratteristicheTipologie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377471621A730A9E00F7B154 /* caratteristicheTipologie.swift */; };
+		377471651A73289300F7B154 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 377471641A73289300F7B154 /* back.jpg */; };
+		37A07AB71A72F0500026D979 /* PrimaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A07AB61A72F0500026D979 /* PrimaTableViewController.swift */; };
 		37DF935B1A6EDBD300FB7DB2 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DF935A1A6EDBD300FB7DB2 /* InfoViewController.swift */; };
 		37DF935D1A6FAD0100FB7DB2 /* copertina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37DF935C1A6FAD0100FB7DB2 /* copertina.jpg */; };
 		37DF93601A6FADF900FB7DB2 /* copertina-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37DF935E1A6FADF900FB7DB2 /* copertina-2.jpg */; };
@@ -37,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3774715E1A72FE4E00F7B154 /* secondaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondaTableViewController.swift; sourceTree = "<group>"; };
+		377471621A730A9E00F7B154 /* caratteristicheTipologie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = caratteristicheTipologie.swift; path = ../caratteristicheTipologie.swift; sourceTree = "<group>"; };
+		377471641A73289300F7B154 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = back.jpg; path = "../../../../PROGETTI_VARI/WP-mancia/back.jpg"; sourceTree = "<group>"; };
+		37A07AB61A72F0500026D979 /* PrimaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaTableViewController.swift; sourceTree = "<group>"; };
 		37DF935A1A6EDBD300FB7DB2 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		37DF935C1A6FAD0100FB7DB2 /* copertina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = copertina.jpg; path = ../../../../PROGETTI_VARI/TASI/copertina.jpg; sourceTree = "<group>"; };
 		37DF935E1A6FADF900FB7DB2 /* copertina-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "copertina-2.jpg"; path = "../../../../PROGETTI_VARI/TASI/copertina-2.jpg"; sourceTree = "<group>"; };
@@ -105,6 +113,9 @@
 				37E43A561A651762005DD6DB /* AppDelegate.swift */,
 				37E43A5B1A651762005DD6DB /* ViewController.swift */,
 				37DF935A1A6EDBD300FB7DB2 /* InfoViewController.swift */,
+				377471621A730A9E00F7B154 /* caratteristicheTipologie.swift */,
+				37A07AB61A72F0500026D979 /* PrimaTableViewController.swift */,
+				3774715E1A72FE4E00F7B154 /* secondaTableViewController.swift */,
 				37E43AE11A654E26005DD6DB /* IndexViewController.swift */,
 				37E790221A6A5A1B00815C6A /* risultatiViewController.swift */,
 				37E43A5D1A651762005DD6DB /* Main.storyboard */,
@@ -121,6 +132,7 @@
 		37E43A541A651762005DD6DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				377471641A73289300F7B154 /* back.jpg */,
 				37DF935E1A6FADF900FB7DB2 /* copertina-2.jpg */,
 				37DF935F1A6FADF900FB7DB2 /* copertina-3.jpg */,
 				37DF935C1A6FAD0100FB7DB2 /* copertina.jpg */,
@@ -232,6 +244,7 @@
 				37DF93601A6FADF900FB7DB2 /* copertina-2.jpg in Resources */,
 				37E43A641A651762005DD6DB /* LaunchScreen.xib in Resources */,
 				37DF93611A6FADF900FB7DB2 /* copertina-3.jpg in Resources */,
+				377471651A73289300F7B154 /* back.jpg in Resources */,
 				37E950E91A6D46DB00FF4F67 /* icona.jpg in Resources */,
 				37DF935D1A6FAD0100FB7DB2 /* copertina.jpg in Resources */,
 				37E950E81A6D46DB00FF4F67 /* icona-small.jpg in Resources */,
@@ -253,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3774715F1A72FE4E00F7B154 /* secondaTableViewController.swift in Sources */,
 				37DF936B1A6FDE8900FB7DB2 /* CitViewController.m in Sources */,
+				377471631A730A9E00F7B154 /* caratteristicheTipologie.swift in Sources */,
+				37A07AB71A72F0500026D979 /* PrimaTableViewController.swift in Sources */,
 				37E43A5C1A651762005DD6DB /* ViewController.swift in Sources */,
 				37E43A5A1A651762005DD6DB /* CalcoloTasi.xcdatamodeld in Sources */,
 				37DF935B1A6EDBD300FB7DB2 /* InfoViewController.swift in Sources */,

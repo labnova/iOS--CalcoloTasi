@@ -41,6 +41,7 @@ class IndexViewController: UIViewController, UITextFieldDelegate  {
     var baseImponibile: Double!
     var impostaLorda: Double!
     var quotaPossesso:Double!
+    var baseImponibileInt: Int!
     
   
     var rataAcconto: Double!
@@ -188,14 +189,18 @@ class IndexViewController: UIViewController, UITextFieldDelegate  {
         if(segue.identifier == "showRisultati") {
             var risultatiVC: risultatiViewController = segue.destinationViewController as risultatiViewController
             let formato = ".3"
+            baseImponibileInt = Int(baseImponibile)
             
-            renditaCatastaleT = castingString(baseImponibile)
+            renditaCatastaleT = String(baseImponibileInt)
             renditaCatastaleT.format(formato)
             
         
             aliquotaText = castingString(impostaLorda)
+            aliquotaText = NSString(format: "%.2f", aliquotaText)
             rataAccontoText = castingString(rataAcconto)
+            //rataAccontoText = NSString(format: "%.2f", rataAccontoText)
             rataSaldoText = castingString(rataSaldo)
+            //rataSaldoText = NSString(format: "%.2f", rataSaldoText)
 
             
             risultatiVC.baseImponibile = renditaCatastaleT
